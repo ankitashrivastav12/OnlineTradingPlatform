@@ -1,0 +1,68 @@
+/* ================= BASE ================= */
+.navbar {
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+.navbar {
+  height: 64px;
+}
+
+/* Prevent content hiding */
+body {
+  padding-top: 64px;
+}
+
+/* Logo */
+.navbar-brand img {
+  height: 32px;
+}
+
+/* ================= NAV LIST ================= */
+.navbar-nav-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links */
+.navbar .nav-link {
+  color: #444;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navbar .nav-link:hover {
+  color: #387ed1;
+}
+
+.navbar .nav-link.active {
+  color: #387ed1;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .navbar-nav-horizontal {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 14px;
+  }
+
+  /* Hide scrollbar */
+  .navbar-nav-horizontal::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-nav-horizontal {
+    scrollbar-width: none;
+  }
+
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+}
+.navbar-nav {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
