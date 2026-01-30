@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -21,11 +22,11 @@ function Hero() {
             bonds, and more.
           </p>
 
-          <a href="http://localhost:3000/signup">
+          <Link to="/signup">
             <button className="btn btn-primary fs-5 px-4 py-2 mt-4">
               Sign up for free
             </button>
-          </a>
+          </Link>
         </div>
 
       </div>

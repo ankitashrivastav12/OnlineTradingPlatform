@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OpenAccount() {
   return (
@@ -11,14 +12,15 @@ function OpenAccount() {
         </p>
 
         <div className="d-flex justify-content-center mt-4">
-          <a href="http://localhost:3000/signup" className="w-100 w-sm-auto">
+          <Link to="/signup"
+           className="w-100 w-sm-auto">
             <button
               className="btn btn-primary fs-5 px-4 py-2"
               style={{ maxWidth: "280px", width: "100%" }}
             >
               Sign up for free
             </button>
-          </a>
+            </Link>
         </div>
       </div>
     </div>
