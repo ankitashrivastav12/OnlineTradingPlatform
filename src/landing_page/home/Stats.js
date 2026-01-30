@@ -55,7 +55,7 @@ function Stats() {
             </Link>
 
             <a
-              href="https://online-trading-platformdashboard-anh3-8nku7f4bq.vercel.app"
+              href="https://online-trading-platformdashboard-an.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
