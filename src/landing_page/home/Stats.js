@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Stats() {
   return (
@@ -20,9 +21,7 @@ function Stats() {
           <p className="text-muted fs-6 mb-4">
             No gimmicks, spam, "gamification", or annoying push notifications.
             High quality apps that you use at your pace, the way you like.{" "}
-            <a href="#" style={{ textDecoration: "none" }}>
-              Our philosophies
-            </a>
+      
           </p>
 
           <h2 className="fs-5">The Zerodha universe</h2>
@@ -51,15 +50,19 @@ function Stats() {
           />
 
           <div className="d-flex justify-content-center gap-4 mt-4 flex-wrap">
-            <a href="#" style={{ textDecoration: "none" }}>
+            <Link to="/product" style={{ textDecoration: "none" }}>
               Explore our products <i className="fa fa-long-arrow-right ps-2"></i>
-            </a>
+            </Link>
+
             <a
-              href="https://kite-demo.zerodha.com/dashboard"
+              href="https://online-trading-platformdashboard-anh3-8nku7f4bq.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
-              Try Kite demo <i className="fa fa-long-arrow-right ps-2"></i>
+              Try Demo <i className="fa fa-long-arrow-right ps-2"></i>
             </a>
+
           </div>
         </div>
       </div>

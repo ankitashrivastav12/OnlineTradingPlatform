@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Pricing() {
   return (
@@ -14,9 +15,10 @@ function Pricing() {
             in India. Flat fees and no hidden charges.
           </p>
 
-          <a href="#" style={{ textDecoration: "none" }}>
+          <Link to="/pricing" style={{ textDecoration: "none" }}>
             See pricing <i className="fa fa-long-arrow-right p-2"></i>
-          </a>
+          </Link>
+
         </div>
 
         {/* RIGHT ICON BLOCKS */}

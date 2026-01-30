@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function CreateTicket() {
   return (
@@ -14,9 +16,11 @@ function CreateTicket() {
           <h3 className="mb-4">Quick links</h3>
 
           <div className="support-links">
-            <a href="#" className="d-block mb-2">
+            <Link to="/signup" className="d-block mb-2">
               Track account opening
-            </a>
+            </Link>
+
+
             <a
               href="https://kite.zerodha.com/connect/login?api_key=console"
               className="d-block mb-2"
