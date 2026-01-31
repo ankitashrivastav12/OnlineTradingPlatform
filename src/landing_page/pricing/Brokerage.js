@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
+
 function Brokerage() {
-    return ( 
-    <div className="container mt-5">
+  return (
+    <div className="container mt-5 pt-4">
 
       {/* Tabs */}
       <ul className="nav nav-tabs mb-4">
@@ -22,219 +23,186 @@ function Brokerage() {
         </li>
       </ul>
 
-      {/* Tab Content */}
-      <div className="tab-content p-5">
+      {/* ================= TAB CONTENT ================= */}
+      <div className="tab-content p-2 p-md-5">
 
         {/* ================= EQUITY ================= */}
         <div className="tab-pane fade show active" id="equity">
-          <table className="table table-bordered pricing-table">
-
-            <thead>
-              <tr>
-                <th></th>
-                <th>Equity delivery</th>
-                <th>Equity intraday</th>
-                <th>F&O - Futures</th>
-                <th>F&O - Options</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Brokerage</td>
-                <td>Zero Brokerage</td>
-                <td>0.03% or Rs. 20/executed order whichever is lower</td>
-                <td>0.03% or ₹20 / order</td>
-                <td>Flat Rs. 20 per executed order</td>
-              </tr>
-              <tr>
-                <td>STT / CTT</td>
-                <td>0.1% on buy & sell</td>
-                <td>0.025% on sell side</td>
-                <td>0.02% on sell side</td>
-                <td>
-                  <ul>
-                    <li>
-                      0.125% of the intrinsic value on options that are bought and exercised.
-                    </li>
-                    <li>
-                      0.1% on sell side (on premium).
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>Transaction charges</td>
-                <td>
-                  <tr>
-                    NSE: 0.00297% 
-                  </tr>
-                  <tr>
-                    BSE:0
-                  </tr>
-                </td>
-                <td>
-                  <tr>
-                     NSE: 0.00297%
-                  </tr>
-                  <tr>
-                    BSE:0.00375%
-                  </tr>
-                </td>  
-                <td>
-                  <tr>
-                    NSE: 0.00173%
-                  </tr>
-                  <tr>
-                    BSE:0
-                  </tr>
-                </td>
-                <td>
-                  <tr>
-                    NSE: 0.03503%(on premium)
-                  </tr>
-                  <tr>
-                    BSE:0.0325%(on premium)
-                  </tr>
-                
-                </td>
-              </tr>
-              <tr>
-                <td>GST</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-              </tr>
-              <tr>
-                <td>SEBI charges</td>
-                <td>₹10 / crore</td>
-                <td>₹10 / crore</td>
-                <td>₹10 / crore</td>
-                <td>₹10 / crore</td>
-              </tr>
-              <tr>
-                <td>Stamp charges</td>
-                <td>0.015% or ₹1500 / crore on buy side</td>
-                <td>0.003% or ₹300 / crore on buy side</td>
-                <td>0.002% or ₹200 / crore on buy side</td>
-                <td>0.003% or ₹300 / crore on buy side</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table className="table table-bordered pricing-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Equity delivery</th>
+                  <th>Equity intraday</th>
+                  <th>F&O - Futures</th>
+                  <th>F&O - Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brokerage</td>
+                  <td>Zero Brokerage</td>
+                  <td>0.03% or ₹20/executed order (lower)</td>
+                  <td>0.03% or ₹20 / order</td>
+                  <td>Flat ₹20 per executed order</td>
+                </tr>
+                <tr>
+                  <td>STT / CTT</td>
+                  <td>0.1% on buy & sell</td>
+                  <td>0.025% on sell side</td>
+                  <td>0.02% on sell side</td>
+                  <td>
+                    <div>0.125% on exercised options</div>
+                    <div>0.1% on sell side (premium)</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Transaction charges</td>
+                  <td>
+                    <div>NSE: 0.00297%</div>
+                    <div>BSE: 0</div>
+                  </td>
+                  <td>
+                    <div>NSE: 0.00297%</div>
+                    <div>BSE: 0.00375%</div>
+                  </td>
+                  <td>
+                    <div>NSE: 0.00173%</div>
+                    <div>BSE: 0</div>
+                  </td>
+                  <td>
+                    <div>NSE: 0.03503%</div>
+                    <div>BSE: 0.0325%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>GST</td>
+                  <td colSpan="4">
+                    18% on (brokerage + SEBI charges + transaction charges)
+                  </td>
+                </tr>
+                <tr>
+                  <td>SEBI charges</td>
+                  <td colSpan="4">₹10 / crore</td>
+                </tr>
+                <tr>
+                  <td>Stamp charges</td>
+                  <td>0.015%</td>
+                  <td>0.003%</td>
+                  <td>0.002%</td>
+                  <td>0.003%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* ================= CURRENCY ================= */}
         <div className="tab-pane fade" id="currency">
-          <table className="table table-bordered">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Currency futures</th>
-                <th>Currency options</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Brokerage</td>
-                <td>0.03% or ₹ 20/executed order whichever is lower</td>
-                <td>₹ 20/executed order</td>
-              </tr>
-              <tr>
-                <td>STT / CTT</td>
-                <td>No STT</td>
-                <td>No STT</td>
-              </tr>
-              <tr>
-                <td>Transaction charges</td>
-                <td>
-                  <tr>
-                    NSE: 0.00035%
-                  </tr>
-                  <tr>
-                    BSE:0.00045%
-                  </tr>
-                </td>
-                <td>
-                  <tr>
-                    NSE: 0.0311%
-                    
-                  </tr>
-                  <tr>
-                    BSE:0.001%
-                  </tr>
-                </td>
-              </tr>
-              <tr>
-                <td>GST</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-              </tr>
-              <tr>
-                <td>SEBI charges</td>
-                <td>₹10 / crore</td>
-                <td>₹10 / crore</td>
-              </tr>
-              <tr>
-                <td>Stamp charges</td>
-                <td>0.0001% or ₹10 / crore on buy side</td>
-                <td>0.0001% or ₹10 / crore on buy side</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table className="table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Currency futures</th>
+                  <th>Currency options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brokerage</td>
+                  <td>0.03% or ₹20/executed order (lower)</td>
+                  <td>₹20/executed order</td>
+                </tr>
+                <tr>
+                  <td>STT / CTT</td>
+                  <td>No STT</td>
+                  <td>No STT</td>
+                </tr>
+                <tr>
+                  <td>Transaction charges</td>
+                  <td>
+                    <div>NSE: 0.00035%</div>
+                    <div>BSE: 0.00045%</div>
+                  </td>
+                  <td>
+                    <div>NSE: 0.0311%</div>
+                    <div>BSE: 0.001%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>GST</td>
+                  <td colSpan="2">
+                    18% on (brokerage + SEBI charges + transaction charges)
+                  </td>
+                </tr>
+                <tr>
+                  <td>SEBI charges</td>
+                  <td colSpan="2">₹10 / crore</td>
+                </tr>
+                <tr>
+                  <td>Stamp charges</td>
+                  <td>0.0001% or ₹10 / crore</td>
+                  <td>0.0001% or ₹10 / crore</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* ================= COMMODITY ================= */}
         <div className="tab-pane fade" id="commodity">
-          <table className="table table-bordered">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Commodity futures</th>
-                <th>Commodity options</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Brokerage</td>
-                <td>0.03% or Rs. 20/executed order whichever is lower</td>
-                <td>₹ 20/executed order</td>
-              </tr>
-              <tr>
-                <td>STT / CTT</td>
-                <td>0.01% on sell side (Non-Agri)</td>
-                <td>0.05% on sell side</td>
-              </tr>
-              <tr>
-                <td>Transaction charges</td>
-                <td>MCX: 0.0021%</td>
-                <td>MCX: 0.0418%</td>
-              </tr>
-              <tr>
-                <td>GST</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-              </tr>
-              <tr>
-                <td>SEBI charges</td>
-                <td>
-                  <tr>Agri:</tr>
-                  <tr>₹1 / crore</tr>
-                  <tr>Non-agri:</tr>
-                  <tr>₹10 / crore</tr>
-                </td>
-                <td>₹10 / crore</td>
-              </tr>
-              <tr>
-                <td>Stamp charges</td>
-                <td>0.002% or ₹200 / crore on buy side</td>
-                <td>0.003% or ₹300 / crore on buy side</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="table-responsive">
+            <table className="table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Commodity futures</th>
+                  <th>Commodity options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brokerage</td>
+                  <td>0.03% or ₹20/executed order (lower)</td>
+                  <td>₹20/executed order</td>
+                </tr>
+                <tr>
+                  <td>STT / CTT</td>
+                  <td>0.01% on sell side (Non-Agri)</td>
+                  <td>0.05% on sell side</td>
+                </tr>
+                <tr>
+                  <td>Transaction charges</td>
+                  <td>MCX: 0.0021%</td>
+                  <td>MCX: 0.0418%</td>
+                </tr>
+                <tr>
+                  <td>GST</td>
+                  <td colSpan="2">
+                    18% on (brokerage + SEBI charges + transaction charges)
+                  </td>
+                </tr>
+                <tr>
+                  <td>SEBI charges</td>
+                  <td>
+                    <div>Agri: ₹1 / crore</div>
+                    <div>Non-agri: ₹10 / crore</div>
+                  </td>
+                  <td>₹10 / crore</td>
+                </tr>
+                <tr>
+                  <td>Stamp charges</td>
+                  <td>0.002% or ₹200 / crore</td>
+                  <td>0.003% or ₹300 / crore</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div>
-
       {/* Calculator link */}
       <div className="text-center mt-5">
         <p className="fs-5 text-muted">
